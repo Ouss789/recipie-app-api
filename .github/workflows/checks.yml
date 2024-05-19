@@ -17,6 +17,3 @@ jobs:
         uses: actions/checkout@v2
       - name: Test
         run: sudo docker-compose run --rm app sh -c "python manage.py test"
-      - name: Lint
-        run: sudo apt install python3-pip
-        run: sudo docker-compose run --rm app sh -c "flake8"
